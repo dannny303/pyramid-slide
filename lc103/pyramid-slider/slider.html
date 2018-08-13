@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<div class="slidecontainer">
+    <input type="range" min="1" max="50" value="2" class="slider" id="myRange">
+    <p>Value: <span id="demo"></span></p>
+</div>
+
+<style>
+    .slidecontainer {
+        width: 50%;
+    }
+
+
+
+</style>
+
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+    
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+</script>
+</html>
